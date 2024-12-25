@@ -1,0 +1,87 @@
+body, h1, h2, h3, p, ul, li, a, form, div, label, select, input, button, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f0f8ff; 
+    color: #003366;
+}
+
+.navigacija ul {
+    list-style: none;
+    background-color: #003366; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navigacija ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navigacija ul li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.navigacija ul li a:hover {
+    background-color: #005bb5; 
+}
+
+header {
+    text-align: center;
+    background-color: #003366; 
+    color: white; 
+    padding: 15px 0;
+    border-bottom: 3px solid #005bb5;
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; 
+    border: 2px solid #003366;
+    width: 90%;
+    max-width: 800px;
+}
+
+main h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 1%;
+    border: 1px solid #003366;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: #003366; 
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #f0f8ff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bs">
+    <style>
+        form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+form select, form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    background-color: #f0f8ff; 
+    font-size: 14px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #003366; 
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #005bb5; 
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kupovina Karata - FK Željezničar</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigacija">
+            <ul class="navigacija">
+                <li class="navigacija"><a href="index.html">Početna</a></li>
+                <li class="navigacija"><a href="history.html">Historija Kluba</a></li>
+                <li class="navigacija"><a href="gallery.html">Postava</a></li>
+                <li class="navigacija"><a href="tickets.html">Kupovina Karata</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kupovina Karata</h1>
+        <form>
+            <div>
+                <label for="match">Odaberi utakmicu:</label>
+                <select id="match" name="match">
+                    <option value="zeljeznicar-vs-sarajevo">Željezničar vs Sarajevo</option>
+                    <option value="zeljeznicar-vs-borac">Željezničar vs Borac</option>
+                    <option value="zeljeznicar-vs-velez">Željezničar vs Velež</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="ticket-type">Tip karte:</label>
+                <select id="ticket-type" name="ticket-type">
+                    <option value="tribina-sjever">Tribina Sjever</option>
+                    <option value="tribina-istok">Tribina Istok</option>
+                    <option value="tribina-jug">Tribina Jug</option>
+                    <option value="tribina-zapad">Tribina Zapad</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="quantity">Broj karata:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            </div>
+
+            <div>
+                <label for="name">Ime i Prezime:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <button type="submit">Kupi Kartu</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FK Željezničar. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>
